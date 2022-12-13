@@ -12,29 +12,25 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | News homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
     <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | News homepage</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="navbar">
           <div class="logo-container">
-            <img src="/assets/images/logo.svg" alt="logo" />
+            <img class="logo" src="./assets/images/logo.svg" alt="logo" />
           </div>
           <nav class="main-nav">
-            <ul>
+            <ul class="nav-list">
               <li><a href="" class="nav-link">Home</a></li>
               <li><a href="" class="nav-link">New</a></li>
               <li><a href="" class="nav-link">Popular</a></li>
@@ -50,69 +46,86 @@
         <div class="container hero-container">
           <div>
             <div class="hero-img">
-              <img src="/assets/images/image-web-3-desktop.jpg" alt="" />
+              <img src="./assets/images/image-web-3-desktop.jpg" alt="" />
             </div>
             <div class="hero-text">
               <h1 class="primary-heading">The Bright Future of Web 3.0?</h1>
-              <p class="hero-description">
-                We dive into the next evolution of the web that claims to put
-                the power of the platforms back into the hands of the people.
-                But is it really fulfilling its promise?
-              </p>
-              <a href="" class="btn">Read more</a>
+              <div class="description-box">
+                <p class="hero-description">
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <a href="" class="btn">Read more</a>
+              </div>
             </div>
           </div>
 
           <aside>
             <h2 class="heading-secondary">New</h2>
-            <a href="" class="heading-tertiary">Hydrogen VS Electric Cars</a>
-            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-            <a href="" class="heading-tertiary">The Downsides of AI Artistry</a>
-            <p>
-              What are the possible adverse effects of on-demand AI image
-              generation?
-            </p>
-            <a href="" class="heading-tertiary">Is VC Funding Drying Up?</a>
-            <p>
-              Private funding by VC firms is down 50% YOY. We take a look at
-              what that means.
-            </p>
+            <div class="latest">
+              <a href="" class="aside-link">Hydrogen VS Electric Cars</a>
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+            <div class="latest">
+              <a href="" class="aside-link">The Downsides of AI Artistry</a>
+              <p>
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </div>
+            <div class="latest">
+              <a href="" class="aside-link">Is VC Funding Drying Up?</a>
+              <p>
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </div>
           </aside>
         </div>
       </section>
       <section class="section-featured">
-        <div class="container">
+        <div class="container featured">
           <div class="step-box">
-            <div class="step-box-img">
-              <img src="/assets/images/image-retro-pcs.jpg" alt="" />
-            </div>
+            <img
+              class="step-box-img"
+              src="./assets/images/image-retro-pcs.jpg"
+              alt=""
+            />
+
             <div class="step-box-text">
               <span class="step-number">01</span>
-              <a href="" class="heading-tertiary">Reviving Retro PCs</a>
+              <a href="" class="step-link">Reviving Retro PCs</a>
               <p class="step-description">
                 What happens when old PCs are given modern upgrades?
               </p>
             </div>
           </div>
           <div class="step-box">
-            <div class="step-box-img">
-              <img src="/assets/images/image-top-laptops.jpg" alt="" />
-            </div>
+            <img
+              class="step-box-img"
+              src="./assets/images/image-top-laptops.jpg"
+              alt=""
+            />
+
             <div class="step-box-text">
               <span class="step-number">02</span>
-              <a href="" class="heading-tertiary">Top 10 Laptops of 2022</a>
+              <a href="" class="step-link">Top 10 Laptops of 2022</a>
               <p class="step-description">
                 Our best picks for various needs and budgets.
               </p>
             </div>
           </div>
           <div class="step-box">
-            <div class="step-box-img">
-              <img src="/assets/images/image-gaming-growth.jpg" alt="" />
-            </div>
+            <img
+              class="step-box-img"
+              src="./assets/images/image-gaming-growth.jpg"
+              alt=""
+            />
+
             <div class="step-box-text">
               <span class="step-number">03</span>
-              <a href="" class="heading-tertiary">The Growth of Gaming</a>
+              <a href="" class="step-link">The Growth of Gaming</a>
               <p class="step-description">
                 How the pandemic has sparked fresh opportunities.
               </p>
@@ -120,13 +133,15 @@
           </div>
         </div>
       </section>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/Hassankidult" target="_blank"
+          >Hassan Aliyu</a
+        >.
+      </div>
     </main>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
   </body>
 </html>

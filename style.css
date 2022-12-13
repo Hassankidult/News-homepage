@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #c5c6ce;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 4.6rem 0;
+}
+
+/**********************/
+/* HEADER */
+/**********************/
+.header {
+}
+
+.logo {
+  height: 3.2rem;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 9.6rem;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 4.6rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  font-size: 1.6rem;
+  color: #00001a;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #f15e50;
+}
+
+/**********************/
+/* HERO SECTION */
+/**********************/
+.section-hero {
+  padding: 4.8rem 0 6.4rem;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 70fr 30fr;
+  gap: 2.4rem;
+}
+
+.hero-text {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 2.4rem;
+}
+
+.primary-heading {
+  font-size: 6.2rem;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  color: #00001a;
+}
+
+.description-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 100%;
+}
+
+.hero-description {
+  line-height: 1.6;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 1.8rem;
+  padding: 1.6rem 3.2rem;
+  letter-spacing: 3px;
+  color: #fffdfa;
+  background-color: #f15e50;
+  align-self: start;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #00001a;
+}
+
+aside {
+  background-color: #00001a;
+  color: #fffdfa;
+  padding: 3.2rem 2.4rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  color: #e9ab53;
+  margin-bottom: 3.2rem;
+}
+
+.aside-link {
+  font-size: 2rem;
+  color: #fffdfa;
+  margin-bottom: 1.2rem;
+  transition: all 0.3s;
+}
+
+.aside-link:hover {
+  color: #f15e50;
+}
+
+aside p {
+  color: #5d5f79;
+}
+
+.latest + .latest {
+  border-top: 1px solid #5d5f79;
+  padding-top: 3.2rem;
+  margin-top: 3.2rem;
+}
+
+/**********************/
+/* HERO SECTION */
+/**********************/
+.section-featured {
+  padding: 6.4rem 0;
+}
+.featured {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.step-box {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.step-box-img {
+  max-width: 10rem;
+}
+
+.step-box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.step-number {
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.step-link {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00001a;
+  transition: all 0.3s;
+  margin-bottom: 0.8rem;
+}
+
+.step-link:hover {
+  color: #f15e50;
+}
