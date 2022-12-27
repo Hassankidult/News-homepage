@@ -15,11 +15,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body>
@@ -38,6 +43,10 @@
               <li><a href="" class="nav-link">Categories</a></li>
             </ul>
           </nav>
+          <button class="mobile-nav">
+            <i class="uil uil-bars mobile-nav-icon open"></i>
+            <i class="uil uil-times mobile-nav-icon close"></i>
+          </button>
         </div>
       </div>
     </header>
@@ -46,7 +55,16 @@
         <div class="container hero-container">
           <div>
             <div class="hero-img">
-              <img src="./assets/images/image-web-3-desktop.jpg" alt="" />
+              <img
+                class="desktop"
+                src="./assets/images/image-web-3-desktop.jpg"
+                alt=""
+              />
+              <img
+                class="mobile"
+                src="./assets/images/image-web-3-mobile.jpg"
+                alt=""
+              />
             </div>
             <div class="hero-text">
               <h1 class="primary-heading">The Bright Future of Web 3.0?</h1>

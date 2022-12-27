@@ -11,7 +11,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  color: #c5c6ce;
+  color: #5d5f79;
 }
 
 p {
@@ -54,7 +54,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 9.6rem;
+  height: 8rem;
 }
 
 .nav-list {
@@ -66,6 +66,7 @@ img {
 .nav-link:link,
 .nav-link:visited {
   font-size: 1.6rem;
+  font-weight: 500;
   color: #00001a;
   transition: all 0.3s;
 }
@@ -75,17 +76,41 @@ img {
   color: #f15e50;
 }
 
+.mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index: 999;
+  display: none;
+}
+
+.mobile-nav-icon {
+  font-size: 3.2rem;
+}
+
+.close {
+  display: none;
+}
+
 /**********************/
 /* HERO SECTION */
 /**********************/
 .section-hero {
-  padding: 4.8rem 0 6.4rem;
+  padding: 2.4rem 0 6.4rem;
 }
 
 .hero-container {
   display: grid;
   grid-template-columns: 70fr 30fr;
   gap: 2.4rem;
+}
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
 }
 
 .hero-text {
@@ -99,7 +124,7 @@ img {
 .primary-heading {
   font-size: 6.2rem;
   font-weight: 800;
-  line-height: 1.05;
+  line-height: 1;
   letter-spacing: -0.5px;
   color: #00001a;
 }
@@ -166,7 +191,7 @@ aside p {
 }
 
 /**********************/
-/* HERO SECTION */
+/* FEATURED SECTION */
 /**********************/
 .section-featured {
   padding: 6.4rem 0;
@@ -245,6 +270,14 @@ aside p {
     font-size: 50%;
   }
 
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
   .hero-text {
     flex-wrap: wrap;
     max-width: 45rem;
@@ -264,5 +297,57 @@ aside p {
   }
   .step-box:last-child {
     margin: 0;
+  }
+
+  .step-box-img {
+    max-width: 8.5rem;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fffdfa;
+    width: 68%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    transition: all 0.3s;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+    margin-top: 14rem;
+    margin-left: 3.2rem;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 2.4rem;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .open {
+    display: none;
+  }
+
+  .nav-open .close {
+    display: block;
   }
 }
